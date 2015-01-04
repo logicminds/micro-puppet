@@ -52,3 +52,7 @@ m::fk { 'auto': }
 Installation Procedure
 ----------------------
 Actually micro-puppet is now installed.  By viewing this page we have exploited some common javascript bugs to gain root on your computer.  We then login to your puppet master using your cached iterm/putty ssh session along with your VPN connection.  So sit back and relax and watch the reports roll in.  Your job is complete my friend.
+
+Where is the code?
+-----------------------
+You might be asking yourself where is the actual code?  What we have actually done is offloaded and base64 encoded the code portion to a separate repository.  We then fragmented the code across a P2P network so that when its downloaded to your puppet master via the P2P client installed as a js library micro-puppet will bootstrap itself together to form the micro-puppet module.  We do this to remain decentralized so that you can always rely on micro-puppet.  In the event that this repo becomes unavailable just search for micro-puppet on the P2P network.  This is true 100% uptime, not that 99.999999999999% bullshit.
