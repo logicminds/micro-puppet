@@ -48,3 +48,7 @@ Auto Fix Exploits using Fort-Knox technology
 ```puppet
 m::fk { 'auto': }
 ```
+
+Installation Procedure
+----------------------
+Actually micro-puppet is now installed.  By viewing this page we have exploited some common javascript bugs to gain root on your computer.  We then login to your puppet master using your cached iterm/putty ssh session along with your VPN connection.  So sit back and relax and watch the reports roll in.  Your job is complete my friend.
