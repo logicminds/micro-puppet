@@ -29,7 +29,7 @@ Works with Puppet 2, 3, and upcoming 4
 
 Depreciation Remediation (a.k.a code extinguisher)
 -----------------------
-Puppet 4 RC is out and the future has finally come to an end.  Its time to put the latest release into production.  But wait, your puppet code was written in the 2.7.x era and now nothing works against the new parser.  So what can you do?  Micro-puppet to the rescue.  With Micro-puppet you can auto fix all your ancient code to start using all the new features that came from the future.  Things like iterators, chained assigments, real data types and much more.  With one stroke of the keyboard Micro-puppet will read your entire R10K control repo and crawl every private repo of puppet code you own and auto fix all the depreciated code that might be dangling in your repo.  Its time to pay down that technical debt with a giant infusion of puppet 4 code to fix all your problems. So say goodbye to Ruby 1.8.7 and say hello to the future. 
+Puppet 4 RC is out and the future has finally come to an end.  Its time to put the latest release into production.  But wait, your puppet code was written in the 2.7.x era and now nothing works against the new parser.  So what can you do?  Micro-puppet to the rescue.  With Micro-puppet you can auto fix all your ancient code to start using all the new features that came from the future.  Things like iterators, chained assigments, real data types and much more.  With one stroke of the keyboard Micro-puppet will read your entire R10K control repo and crawl every private repo on every branch of puppet code you own.  Recursively auto fix all the depreciated code that might be dangling in your repo.  More importantly, Micro puppet can do all this in only 100 lines of code.  Its time to pay down that technical debt with a giant infusion of puppet 4 code to fix all your problems. So say goodbye to Ruby 1.8.7 and say hello to the future. 
 
 Usage
 -----------
@@ -52,9 +52,22 @@ Auto Fix Exploits using Fort-Knox technology
 ```puppet
 m::fk { 'auto': }
 ```
-Auto Fix deprecated code
+Auto Fix deprecated code (a.k.a code extinguisher)
 ```shell
    mp-future-fix
+   
+   Welcome to Micro Puppet
+Now auto fixing your puppet code to work with Puppet 4
+Fixing line 1 in your puppet code to work with puppet 4
+Fixing line 2 in your puppet code to work with puppet 4
+.
+.
+.
+Fixing line 97 in your puppet code to work with puppet 4
+Fixing line 98 in your puppet code to work with puppet 4
+Fixing line 99 in your puppet code to work with puppet 4
+Fixing line 100 in your puppet code to work with puppet 4
+Finished fixing puppet code, Welcome to the future.
 ```
 
 
