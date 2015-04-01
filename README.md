@@ -9,7 +9,7 @@ We need more beerops time. And because 2015 is the year of DSLs.
 
 Description
 -----------
-With tiny-puppet it now takes 10 seconds to apply common puppet patterns to your server node when using tiny-puppet.  But personally, I think we can do better. I wanted something even shorter and less verbose.  Something that can take me from naked to fully enforced in under 5 seconds is obiviously better. Enter micro-puppet.  I cannot afford to spare 5 seconds.  A DSL around the already shortened tiny-puppet DSL just makes sense.  It's a triple DSL threat and great things always come in threes.  
+With tiny-puppet it now takes 10 seconds to apply common puppet patterns to your server node when using tiny-puppet.  But personally, I think we can do better. I wanted something even shorter and less verbose.  Something that can take me from naked to fully enforced in under 5 seconds is obviously better. Enter micro-puppet.  I cannot afford to spare 5 seconds.  A DSL around the already shortened tiny-puppet DSL just makes sense.  It's a triple DSL threat and great things always come in threes.  
 
 Major Differences
 -----------------
@@ -26,6 +26,10 @@ Micro-puppet even searches your browser history to see what you don't know and r
 Requirements
 ------------
 Works with Puppet 2, 3, and upcoming 4
+
+Depreciation Remediation (a.k.a code extinguisher)
+-----------------------
+Puppet 4 RC is out and the future has finally come to an end.  Its time to put the latest release into production.  But wait, your puppet code was written in the 2.7.x era and now nothing works against the new parser.  So what can you do?  Micro-puppet to the rescue.  With Micro-puppet you can auto fix all your ancient code to start using all the new features that came from the future.  Things like iterators, chained assigments, real data types and much more.  With one stroke of the keyboard Micro-puppet will read your entire R10K control repo and crawl every private repo of puppet code you own and auto fix all the depreciated code that might be dangling in your repo.  Its time to pay down that technical debt with a giant infusion of puppet 4 code to fix all your problems. So say goodbye to Ruby 1.8.7 and say hello to the future. 
 
 Usage
 -----------
@@ -48,6 +52,11 @@ Auto Fix Exploits using Fort-Knox technology
 ```puppet
 m::fk { 'auto': }
 ```
+Auto Fix deprecated code
+```shell
+   mp-future-fix
+```
+
 
 Installation Procedure
 ----------------------

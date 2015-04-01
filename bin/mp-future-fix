@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+puts "Welcome to Micro Puppet"
+puts "Now auto fixing your puppet code to work with Puppet 4"
+(1..100).each do |line|
+   puts "Fixing line #{line} in your puppet code to work with puppet 4"
+end
+puts "Finished fixing puppet code, Welcome to the future."
