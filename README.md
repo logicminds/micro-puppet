@@ -9,7 +9,10 @@ We need more beerops time. And because 2015 is the year of DSLs.
 
 Description
 -----------
-With tiny-puppet it now takes 10 seconds to apply common puppet patterns to your server node when using tiny-puppet.  But personally, I think we can do better. I wanted something even shorter and less verbose.  Something that can take me from naked to fully enforced in under 5 seconds is obviously better. Enter micro-puppet.  I cannot afford to spare 5 seconds.  A DSL around the already shortened tiny-puppet DSL just makes sense.  It's a triple DSL threat and great things always come in threes.  
+With tiny-puppet it now takes 10 seconds to apply common puppet patterns to your server node when using tiny-puppet.
+But personally, I think we can do better. I wanted something even shorter and less verbose.
+Something that can take me from naked to fully enforced in under 5 seconds, which is obviously better. Enter micro-puppet.
+A DSL around the already shortened tiny-puppet DSL.  It's a triple DSL threat and you know great things always come in threes (Puppet --> Tiny-Puppet --> Micro-Puppet).
 
 Major Differences
 -----------------
@@ -52,6 +55,13 @@ Auto Fix Exploits using Fort-Knox technology
 ```puppet
 m::fk { 'auto': }
 ```
+
+Do everything at once
+```puppet
+   generate_beerops('auto')      # a puppet function that uses create_resources to run all of the manifests above.
+
+```
+
 Auto Fix deprecated code (a.k.a code extinguisher)
 ```shell
    mp-future-fix
